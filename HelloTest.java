@@ -1,16 +1,23 @@
-package classpart;
+package hello;
 
 class Hello{
-	public void sayHello() {
-		System.out.println("Hello~ ");
+	public void sayHello() { //반환형이 void인 메서드
+		System.out.println("Hello~ Java");
+	}
+	
+	public void sayHello(String name) { //매개변수가 있는 메서드
+		System.out.println("Hello~ " + name);
 	}
 }
 
-public class HelloTest{
+public class HelloTest {
 
 	public static void main(String[] args) {
-		Hello hello = new Hello();  //Hello 객체 생성
+		Hello hello = new Hello();
 		
-		hello.sayHello();  //sayHello() 호출
+		hello.sayHello();
+		
+		hello.sayHello("박마늘");
+		hello.sayHello("Biden");
 	}
 }
